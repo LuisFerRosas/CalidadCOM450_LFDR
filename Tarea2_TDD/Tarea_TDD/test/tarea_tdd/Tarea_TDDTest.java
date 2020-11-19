@@ -39,4 +39,27 @@ public class Tarea_TDDTest {
         assertEquals(2, response);
     }
     
+    @Test
+    public void testFactoria3() {
+        
+        int response = operacion.Factorial(3);
+        
+        assertEquals(6, response);
+    }
+    
+    @Test
+    public void testFactoria4() {
+        
+        int response = operacion.Factorial(5);
+        
+        assertEquals(120, response);
+    }
+    
+    @Test
+    public void testFactoria5() {
+        
+        int response = operacion.Factorial(8);
+        
+        assertEquals(40320, response);
+    }
 }
