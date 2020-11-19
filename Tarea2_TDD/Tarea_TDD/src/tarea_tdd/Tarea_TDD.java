@@ -18,8 +18,12 @@ public class Tarea_TDD {
         // TODO code application logic here
     }
     public int Factorial(int n){
-        if(n==0){
+        if(n==0 || n==1){
             return 1;
+        }else{
+            if(n == 2){
+                return 2;
+            }
         }
         
         return n;

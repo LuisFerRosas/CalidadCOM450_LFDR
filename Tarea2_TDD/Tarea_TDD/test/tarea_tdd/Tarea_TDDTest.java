@@ -14,9 +14,9 @@ import static org.junit.Assert.*;
  * @author Fernando
  */
 public class Tarea_TDDTest {
-    
+    Tarea_TDD operacion;
     public Tarea_TDDTest() {
-//        operacion = new Tarea_TDD();
+        operacion = new Tarea_TDD();
     }
     
     @BeforeClass
@@ -24,11 +24,19 @@ public class Tarea_TDDTest {
     }
 
     @Test
-    public void testMain() {
-        Tarea_TDD operacion = new Tarea_TDD();
+    public void testFactorial() {
+        
         int response = operacion.Factorial(0);
-        System.out.println(response);
+        
         assertEquals(1, response);
+    }
+    
+    @Test
+    public void testFactoria2() {
+        
+        int response = operacion.Factorial(2);
+        
+        assertEquals(2, response);
     }
     
 }
